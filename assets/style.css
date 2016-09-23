@@ -30,6 +30,19 @@ body {
   color: #212121;
   font-family: 'Roboto', sans-serif;
 }
+.material-icons.md-18 {
+  font-size: 18px;
+}
+.material-icons.md-24 {
+  font-size: 24px;
+}
+.material-icons.md-36 {
+  font-size: 36px;
+}
+.material-icons.md-48 {
+  font-size: 48px;
+}
+/*sidebar*/
 .sidebar {
   padding: 1rem;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
@@ -39,7 +52,18 @@ body {
   background: #fff;
   font-family: 'Roboto', sans-serif;
 }
+.sidebar a {
+  color: #212121;
+}
+.sidebar h3 {
+  font-weight: 700;
+}
+.sidebar h4,
+p {
+  font-size: 1.5rem;
+}
 .navbar {
+  max-width: 100%;
   background: #303f9f;
   color: #fff;
   font-family: 'Roboto', sans-serif;
@@ -52,10 +76,19 @@ body {
 }
 .wrapper {
   margin-left: 20%;
-  max-width: 100%;
+}
+.padding {
+  padding: 1rem;
+}
+/*dashboard*/
+/*panels*/
+.panel-sidebar {
+  background: #fff;
+  font-weight: 700;
   padding: 1rem;
 }
 .panel-indigo {
   background: #303F9F;
   color: #fff;
+  padding: 1rem;
 }

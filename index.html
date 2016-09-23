@@ -31,67 +31,240 @@
 </head>
 
 <body>
-
-	<div class="navbar navbar-indigo">
+<div class="container-fluid">
+<div class="row">
+		<div class="navbar navbar-indigo" role="navigation">
 
 		<a id="menu-btn" class="navbar-brand" href="#"><i id="hamburger-menu" class="material-icons">menu</i></i></a>
-		<a class="navbar-brand" href="#">Generic</a>
-		<ul class="nav navbar-nav pull-right">
-			<li class="active">
-				<a href="#"><i class="material-icons">account_circle</i>	</a>
+		<a class="navbar-brand hiddex-xs" href="#">Dashboard</a>
+		
+
+
+
+
+
+		<ul id="top-nav-userinfo" class="nav navbar-nav navbar-right hidden-xs ">
+			<li class="dropdown ">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-ticket fa-2x" aria-hidden="true"></i></a></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">Quick Sale</a></li>
+					<li><a href="#">Box Office</a></li>
+					<li><a href="#">Complimentary</a></li>
+					<li><a href="#">Phone</a></li>
+					
+					
+				</ul>
 			</li>
-			<li>
-				<a href="#">Link</a>
+
+	
+					<li class="dropdown ">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">Add Event</a></li>
+					<li><a href="#">Add Production</a></li>
+					<li><a href="#">Add Venue</a></li>
+					
+				</ul>
 			</li>
+			<li><a id="help-sidebar" href="#"><i class="fa fa-question-circle fa-2x" aria-hidden="true"></i></a></li>
 		</ul>
+		
 	</div>
-<aside id="menu-toggle" class="sidebar">
-	test
+	</div>
+	</div>
+<aside id="menu-toggle" class="sidebar hidden-xs">
+
+	<div class="row">
+		<div class="col-sm-12 text-center">
+			<h4>Organization Name (123456)</h4>
+			<h2><i class="material-icons md-48">account_circle</i></h2>
+			
+			<p>User Login ID</p>
+		</div>
+	</div>
+		<div class="row">
+		<div class="col-sm-12 text-left">
+<!--mgmt-->
+<div class="panel panel-sidebar">
+	 <div class="panel-sidebar">
+			<h3 class="panel-title">
+				<a data-toggle="collapse" href="#collapse1">Management</a>
+			</h3>
+	  </div>
+	  <div id="collapse1" class="panel-collapse collapse">
+	<div class="panel-body">
+	   Basic panel example
+	</div>
+	  </div>
+</div>
+<!--reports-->
+<div class="panel panel-sidebar">
+	 <div class="panel-sidebar">
+			<h3 class="panel-title">
+				<a data-toggle="collapse" href="#collapse1">Reports</a>
+			</h3>
+	  </div>
+	  <div id="collapse1" class="panel-collapse collapse">
+	<div class="panel-body">
+	   Basic panel example
+	</div>
+	  </div>
+</div>
+<!--crm-->
+<div class="panel panel-sidebar">
+	 <div class="panel-sidebar">
+			<h3 class="panel-title">
+				<a data-toggle="collapse" href="#collapse1">CRM</a>
+			</h3>
+	  </div>
+	  <div id="collapse1" class="panel-collapse collapse">
+	<div class="panel-body">
+	   Basic panel example
+	</div>
+	  </div>
+</div>
+<!--help-->
+<div class="panel panel-sidebar">
+	 <div class="panel-sidebar">
+			<h3 class="panel-title">
+				<a data-toggle="collapse" href="#collapse1">Help</a>
+			</h3>
+	  </div>
+	  <div id="collapse1" class="panel-collapse collapse">
+	<div class="panel-body">
+	   Basic panel example
+	</div>
+	  </div>
+</div>
+
+		</div>
+	</div>
+
 </aside>
+
 	<section id="wrapper" class="wrapper">
 
-		<div id="content" class="content-shift container-fluid">
+		<div id="content" class=" padding container-fluid">
 
+<div class="row">
+	<div class="col-sm-12">
+		
+		<div class="alert alert-success">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			<strong>Title!</strong> Alert body ...
+		</div>
+		
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-3">
+1
+	</div>
+		<div class="col-sm-3">
+		2
+	</div>
+		<div class="col-sm-3">
+		3
+	</div>
+		<div class="col-sm-3">
+	4	
+	</div>
+</div>
 			<div class="row">
 
-				<div class="col-xs-12 col-sm-4 col-md-4col-lg-4">
+
+								<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
 		<!--tix content-->
-
-
-<div class="panel panel-success">
-	  <div class="panel-heading">
-			<h3 class="panel-title">Panel title</h3>
+	<div id="messages" class="panel panel-success">
+	  <div class="panel-indigo">
+			<h3 class="panel-title">Messages <button type="button" class="close" data-dismiss="trending-events" aria-hidden="false"><i class="material-icons">message</i></button></h3>
 	  </div>
-	  <div class="panel-body">
-			Panel content
+		<table class="table table-striped">
+			<thead>
+				<tr><th>Date</th>
+					<th>Event Name</th>
+					<th>Sold</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ><td>10/11/16</td>
+					<td>A long name for...</td>
+					<td>35%</td>
+				</tr>
+					<tr ><td>10/12/16</td>
+					<td>A long name for...</td>
+					<td>85%</td>
+				</tr>
+					<tr><td>10/13/16</td>
+					<td>A long name for...</td>
+					<td>52%</td>
+				</tr>
+					<tr><td>10/14/16</td>
+					<td>A long name for...</td>
+					<td>100%</td>
+				</tr>
+				</tr>
+					<tr><td>10/15/16</td>
+					<td>A long name for...</td>
+					<td>100%</td>
+				</tr>
+			</tbody>
+		</table>
+		
+	  <div class="panel-footer text-right">
+<a href="#">additional information</a>
 	  </div>
 </div>
 
-				</div>
+
+	</div>
+									<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+		<!--tix content-->
+
+
+	</div>
 								<div class="col-xs-12 col-sm-4 col-md-4col-lg-4">
 		<!--tix content-->
 
 
-<div class="panel panel-success">
-	  <div class="panel-heading">
-			<h3 class="panel-title">Panel title</h3>
+<div id="trending-events" class="panel panel-success">
+	  <div class="panel-indigo">
+			<h3 class="panel-title">Trending Events <i class="material-icons md-18">trending_up</i> <button type="button" class="close" data-dismiss="trending-events" aria-hidden="true">&times;</button></h3>
 	  </div>
-	  <div class="panel-body">
-			Panel content
-	  </div>
-</div>
-
-				</div>
-								<div class="col-xs-12 col-sm-4 col-md-4col-lg-4">
-		<!--tix content-->
-
-
-<div class="panel panel-success">
-	  <div class="panel-heading">
-			<h3 class="panel-title">Panel title</h3>
-	  </div>
-	  <div class="panel-body">
-			Panel content
+		<table class="table table-striped">
+			<thead>
+				<tr><th>Date</th>
+					<th>Event Name</th>
+					<th>Sold</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ><td>10/11/16</td>
+					<td>A long name for...</td>
+					<td>35%</td>
+				</tr>
+					<tr ><td>10/12/16</td>
+					<td>A long name for...</td>
+					<td>85%</td>
+				</tr>
+					<tr><td>10/13/16</td>
+					<td>A long name for...</td>
+					<td>52%</td>
+				</tr>
+					<tr><td>10/14/16</td>
+					<td>A long name for...</td>
+					<td>100%</td>
+				</tr>
+				</tr>
+					<tr><td>10/15/16</td>
+					<td>A long name for...</td>
+					<td>100%</td>
+				</tr>
+			</tbody>
+		</table>
+		
+	  <div class="panel-footer text-right">
+<a href="#">additional information</a>
 	  </div>
 </div>
 
@@ -102,6 +275,9 @@
 		</div>
 
 	</section>
+	<aside id="help-menu">
+hi
+	</aside>
 
 	<footer class="footer">
 
@@ -118,6 +294,7 @@
 		</div>
 
 	</footer>
+	
 
 	<!-- Latest compiled and minified JavaScript -->
 <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>

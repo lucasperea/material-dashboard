@@ -5,15 +5,22 @@
 @default-font: 'Roboto', sans-serif;
 @default-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
 @default-padding: 1rem;
-//navigation
+//top navigation
 @nav-bg:#303f9f;
 @nav-color:#fff;
 @nav-link: #fff;
 @nav-link-hover: #fff;
 @nav-link-hover-bg:#3F51B5 ;
-//sidebar
+//sidebar navigation
 @sidebar-height: 90vh;
 @sidebar-width: 20%;
+@sidebar-width-mobile: 40%;
+@sidebar-nav-link: #212121;
+@sidebar-nav-weight: 700;
+@sidebar-panel-shadow: none;
+@sidebar-panel-bg: #fff;
+
+
 
 //wrapper
 @wrapper-shift: 20%;
@@ -32,17 +39,33 @@
 .primary-text-color    { color: #212121; }
 .secondary-text-color  { color: #757575; }
 .divider-color         { border-color: #BDBDBD; }
-.background-color { background: #ebeff1}
+.background-color      { background: #ebeff1}
 
 
 body {background:@primary-background-color; color:@text-color; font-family:@default-font;}
 
 
-
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+/*sidebar*/
 .sidebar {  padding: @default-padding;   box-shadow: @default-box-shadow;position: absolute;height:@sidebar-height;width:@sidebar-width;background: @secondary-background-color; font-family: @default-font;}
-.navbar {background: @nav-bg; color:@nav-color; font-family:@default-font;margin-bottom:0;}
+.sidebar a {color:@sidebar-nav-link;}
+.sidebar h3 {font-weight: 700;}
+.sidebar h4, p {font-size: 1.5rem;}
+
+
+
+
+.navbar {max-width: 100%;background: @nav-bg; color:@nav-color; font-family:@default-font;margin-bottom:0;}
 .navbar-indigo .navbar-nav > li > a:hover, .navbar-custom .navbar-nav > li > a:focus {
 background: @nav-link-hover-bg; color:@nav-link-hover; }
-.wrapper {margin-left:@wrapper-shift; max-width: 100%; padding: 1rem;}
+.wrapper {margin-left:@wrapper-shift;}
+.padding {padding: 1rem;}
 
-.panel-indigo {background: @panel-indigo-bg; color:@panel-indigo-text;}
+/*dashboard*/
+
+/*panels*/
+.panel-sidebar {background:@sidebar-panel-bg; font-weight: @sidebar-nav-weight; padding: 1rem;}
+.panel-indigo {background: @panel-indigo-bg; color:@panel-indigo-text; padding: 1rem;}
