@@ -1,0 +1,48 @@
+//defaults
+@primary-background-color:#ebeff1;
+@secondary-background-color:#fff;
+@text-color:#212121;
+@default-font: 'Roboto', sans-serif;
+@default-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+@default-padding: 1rem;
+//navigation
+@nav-bg:#303f9f;
+@nav-color:#fff;
+@nav-link: #fff;
+@nav-link-hover: #fff;
+@nav-link-hover-bg:#3F51B5 ;
+//sidebar
+@sidebar-height: 90vh;
+@sidebar-width: 20%;
+
+//wrapper
+@wrapper-shift: 20%;
+
+
+//panels
+@panel-indigo-bg: #303F9F;
+@panel-indigo-text: #fff; 
+
+
+.dark-primary-color    { background: #303F9F; }
+.default-primary-color { background: #3F51B5; }
+.light-primary-color   { background: #C5CAE9; }
+.text-primary-color    { color: #FFFFFF; }
+.accent-color          { background: #536DFE; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+.divider-color         { border-color: #BDBDBD; }
+.background-color { background: #ebeff1}
+
+
+body {background:@primary-background-color; color:@text-color; font-family:@default-font;}
+
+
+
+.sidebar {  padding: @default-padding;   box-shadow: @default-box-shadow;position: absolute;height:@sidebar-height;width:@sidebar-width;background: @secondary-background-color; font-family: @default-font;}
+.navbar {background: @nav-bg; color:@nav-color; font-family:@default-font;margin-bottom:0;}
+.navbar-indigo .navbar-nav > li > a:hover, .navbar-custom .navbar-nav > li > a:focus {
+background: @nav-link-hover-bg; color:@nav-link-hover; }
+.wrapper {margin-left:@wrapper-shift; max-width: 100%; padding: 1rem;}
+
+.panel-indigo {background: @panel-indigo-bg; color:@panel-indigo-text;}

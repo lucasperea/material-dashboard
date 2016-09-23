@@ -1,0 +1,61 @@
+.dark-primary-color {
+  background: #303F9F;
+}
+.default-primary-color {
+  background: #3F51B5;
+}
+.light-primary-color {
+  background: #C5CAE9;
+}
+.text-primary-color {
+  color: #FFFFFF;
+}
+.accent-color {
+  background: #536DFE;
+}
+.primary-text-color {
+  color: #212121;
+}
+.secondary-text-color {
+  color: #757575;
+}
+.divider-color {
+  border-color: #BDBDBD;
+}
+.background-color {
+  background: #ebeff1;
+}
+body {
+  background: #ebeff1;
+  color: #212121;
+  font-family: 'Roboto', sans-serif;
+}
+.sidebar {
+  padding: 1rem;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+  position: absolute;
+  height: 90vh;
+  width: 20%;
+  background: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+.navbar {
+  background: #303f9f;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 0;
+}
+.navbar-indigo .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+  background: #3F51B5;
+  color: #fff;
+}
+.wrapper {
+  margin-left: 20%;
+  max-width: 100%;
+  padding: 1rem;
+}
+.panel-indigo {
+  background: #303F9F;
+  color: #fff;
+}
