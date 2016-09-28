@@ -44,17 +44,21 @@
 
 body {background:@primary-background-color; color:@text-color; font-family:@default-font;}
 
-
+#menu-btn {visibility: hidden;}
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
 /*sidebar*/
-.sidebar {  padding: @default-padding;   box-shadow: @default-box-shadow;position: absolute;height:@sidebar-height;width:@sidebar-width;background: @secondary-background-color; font-family: @default-font;}
+.sidebar { padding: @default-padding;   box-shadow: @default-box-shadow;position: fixed;height:@sidebar-height;width:@sidebar-width;background: @secondary-background-color; font-family: @default-font; z-index: 9999999;}
 .sidebar a {color:@sidebar-nav-link;}
 .sidebar h3 {font-weight: 700;}
 .sidebar h4, p {font-size: 1.5rem;}
-
+/*help sidebar*/
+.help-sidebar { visibility:hidden; float:right;  margin-left: 80%; margin-top: 0;position: fixed; padding: @default-padding;   box-shadow: @default-box-shadow;position: fixed;height:@sidebar-height;width:@sidebar-width;background: @secondary-background-color; font-family: @default-font; z-index: 9999999;}
+.help-sidebar a {color:@sidebar-nav-link;}
+.help-sidebar h3 {font-weight: 700;}
+.help-sidebar h4, p {font-size: 1.5rem;}
 
 
 
@@ -65,7 +69,27 @@ background: @nav-link-hover-bg; color:@nav-link-hover; }
 .padding {padding: 1rem;}
 
 /*dashboard*/
-
+.panel-dashboard {border-radius: 50%;}
 /*panels*/
 .panel-sidebar {background:@sidebar-panel-bg; font-weight: @sidebar-nav-weight; padding: 1rem;}
 .panel-indigo {background: @panel-indigo-bg; color:@panel-indigo-text; padding: 1rem;}
+
+
+
+
+
+/*mobile*/
+@media only screen and (max-width: 500px) {
+    .sidebar {
+        width:100%;
+        visibility: hidden;
+
+    }
+    #menu-btn {
+        visibility: visible;
+    }
+    .wrapper {
+       margin-left:0;
+    }
+    
+}

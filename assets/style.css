@@ -30,6 +30,9 @@ body {
   color: #212121;
   font-family: 'Roboto', sans-serif;
 }
+#menu-btn {
+  visibility: hidden;
+}
 .material-icons.md-18 {
   font-size: 18px;
 }
@@ -46,11 +49,12 @@ body {
 .sidebar {
   padding: 1rem;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
-  position: absolute;
+  position: fixed;
   height: 90vh;
   width: 20%;
   background: #fff;
   font-family: 'Roboto', sans-serif;
+  z-index: 9999999;
 }
 .sidebar a {
   color: #212121;
@@ -59,6 +63,31 @@ body {
   font-weight: 700;
 }
 .sidebar h4,
+p {
+  font-size: 1.5rem;
+}
+/*help sidebar*/
+.help-sidebar {
+  visibility: hidden;
+  float: right;
+  margin-left: 80%;
+  margin-top: 0;
+  padding: 1rem;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+  position: fixed;
+  height: 90vh;
+  width: 20%;
+  background: #fff;
+  font-family: 'Roboto', sans-serif;
+  z-index: 9999999;
+}
+.help-sidebar a {
+  color: #212121;
+}
+.help-sidebar h3 {
+  font-weight: 700;
+}
+.help-sidebar h4,
 p {
   font-size: 1.5rem;
 }
@@ -81,6 +110,9 @@ p {
   padding: 1rem;
 }
 /*dashboard*/
+.panel-dashboard {
+  border-radius: 50%;
+}
 /*panels*/
 .panel-sidebar {
   background: #fff;
@@ -91,4 +123,17 @@ p {
   background: #303F9F;
   color: #fff;
   padding: 1rem;
+}
+/*mobile*/
+@media only screen and (max-width: 500px) {
+  .sidebar {
+    width: 100%;
+    visibility: hidden;
+  }
+  #menu-btn {
+    visibility: visible;
+  }
+  .wrapper {
+    margin-left: 0;
+  }
 }

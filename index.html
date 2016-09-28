@@ -23,6 +23,9 @@
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 <!--jquery ui-->
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
+
+<link ref="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
 	<!--custom css-->
 
 	<link rel="stylesheet" href="assets/style.css">
@@ -33,10 +36,10 @@
 <body>
 <div class="container-fluid">
 <div class="row">
-		<div class="navbar navbar-indigo" role="navigation">
+		<div id="top-nav" class="navbar navbar-indigo" role="navigation">
 
-		<a id="menu-btn" class="navbar-brand" href="#"><i id="hamburger-menu" class="material-icons">menu</i></i></a>
-		<a class="navbar-brand hiddex-xs" href="#">Dashboard</a>
+		<a id="menu-btn" class="navbar-brand" href="#" ><i id="hamburger-menu" class="material-icons">menu</i></i></a>
+		<a id="brand-name" class="navbar-brand hiddex-xs" href="#">Dashboard</a>
 		
 
 
@@ -44,8 +47,9 @@
 
 
 		<ul id="top-nav-userinfo" class="nav navbar-nav navbar-right hidden-xs ">
+			<li><a href="#"><i class="fa fa-envelope fa-2x"></i> <span class="badge">7</span></a></li>
 			<li class="dropdown ">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-ticket fa-2x" aria-hidden="true"></i></a></a>
+				<a title="Sell a Ticket!"  href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-ticket fa-2x" aria-hidden="true"></i></a></a>
 				<ul class="dropdown-menu">
 					<li><a href="#">Quick Sale</a></li>
 					<li><a href="#">Box Office</a></li>
@@ -55,10 +59,12 @@
 					
 				</ul>
 			</li>
-
+	
+	
+	
 	
 					<li class="dropdown ">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></a>
+				<a title="Add Event, Production & Venue" href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></a>
 				<ul class="dropdown-menu">
 					<li><a href="#">Add Event</a></li>
 					<li><a href="#">Add Production</a></li>
@@ -67,17 +73,23 @@
 				</ul>
 			</li>
 			<li><a id="help-sidebar" href="#"><i class="fa fa-question-circle fa-2x" aria-hidden="true"></i></a></li>
+		
 		</ul>
 		
 	</div>
 	</div>
 	</div>
-<aside id="menu-toggle" class="sidebar hidden-xs">
-
+<aside id="menu-toggle" class="sidebar ">
+	<div class="row">
+		<div class="col-sm-12 text-right">
+			<a id="close-menu" ><i class="fa fa-times fa-2x"></i></a>
+			
+		</div>
+	</div>
 	<div class="row">
 		<div class="col-sm-12 text-center">
 			<h4>Organization Name (123456)</h4>
-			<h2><i class="material-icons md-48">account_circle</i></h2>
+			<h2 class="hidden-xs"><i class="material-icons md-48">account_circle</i></h2>
 			
 			<p>User Login ID</p>
 		</div>
@@ -158,16 +170,32 @@
 </div>
 <div class="row">
 	<div class="col-sm-3">
-1
+<div class="panel panel-dasboard">
+<div class="panel-body">
+	testing
+</div>
+</div>
 	</div>
 		<div class="col-sm-3">
-		2
+	<div class="panel panel-success">
+<div class="panel-body">
+	testing
+</div>
+</div>
 	</div>
 		<div class="col-sm-3">
-		3
+	<div class="panel panel-success">
+<div class="panel-body">
+	testing
+</div>
+</div>
 	</div>
 		<div class="col-sm-3">
-	4	
+	<div class="panel panel-success">
+<div class="panel-body">
+	testing
+</div>
+</div>
 	</div>
 </div>
 			<div class="row">
@@ -175,11 +203,12 @@
 
 								<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
 		<!--tix content-->
-	<div id="messages" class="panel panel-success">
+	<div id="messages" class="panel panel-success" style="box-sizing: content-box;">
 	  <div class="panel-indigo">
 			<h3 class="panel-title">Messages <button type="button" class="close" data-dismiss="trending-events" aria-hidden="false"><i class="material-icons">message</i></button></h3>
 	  </div>
-		<table class="table table-striped">
+	  <div class="panel-body">
+		<table class="table table-striped" >
 			<thead>
 				<tr><th>Date</th>
 					<th>Event Name</th>
@@ -210,6 +239,7 @@
 				</tr>
 			</tbody>
 		</table>
+		</div>
 		
 	  <div class="panel-footer text-right">
 <a href="#">additional information</a>
@@ -273,11 +303,19 @@
 			</div>
 
 		</div>
-
+<aside id="help-menu" class="help-sidebar">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				test
+			
+				
+			</div>
+		</div>
+	</div>
+</aside>
 	</section>
-	<aside id="help-menu">
-hi
-	</aside>
+
 
 	<footer class="footer">
 
@@ -299,6 +337,8 @@ hi
 	<!-- Latest compiled and minified JavaScript -->
 <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
 	<script   src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"   integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="   crossorigin="anonymous"></script>
+
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/js/material.min.js"></script>
 	<script src="assets/js/dashboard.js"></script>
